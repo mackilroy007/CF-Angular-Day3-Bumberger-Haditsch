@@ -1,0 +1,20 @@
+<br>
+<h2 class="text-center">Our Products</h2>
+<br>
+<div class="row my-4 d-flex justify-content-center">
+  <div *ngFor="let product of products; index as productId" class="row col-md-5  my-2 mx-2">
+    <div class="card mx-auto">
+      <a [routerLink]="['/products', productId]" style="text-decoration: none">
+        <img src={{product.img}} class="card-img-top" alt={{product.name}}>
+        <div class="card-body">
+          <h3>
+            {{ product.name }}
+          </h3>
+          <p *ngIf="product.description">
+            Description: {{ product.description }}
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

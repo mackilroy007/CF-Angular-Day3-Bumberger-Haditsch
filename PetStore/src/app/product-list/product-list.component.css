@@ -1,0 +1,14 @@
+
+/* remove blue visual links over the card file */
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:black }
+
+.card{
+    max-width: 70rem;
+}
+
+img{
+    height: 15rem;
+}
